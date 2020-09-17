@@ -1,0 +1,13 @@
+---
+layout: default
+title: Travels
+---
+<h1>Travelogues</h1>
+
+<ul>
+    {% for trip in site.trips %}
+        <li>
+            <h2><a href="{{ trip.url }}">{{ trip.name }}</a></h2>
+        </li>
+    {% endfor %}
+</ul>

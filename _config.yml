@@ -1,0 +1,28 @@
+site: Andrew Xia
+url: https://andrewxia.ca
+title: Andrew Xia
+description: Andrew Xia's Personal Portfolio
+
+sass:
+  sass_dir: _sass
+  style: :compressed
+
+collections:
+  trips:
+    output: true
+
+defaults:
+  - scope:
+      path: ""
+      type: "authors"
+    values:
+      layout: "author"
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+  - scope:
+      path: ""
+    values:
+      layout: "default"
