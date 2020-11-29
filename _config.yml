@@ -2,7 +2,6 @@ site: Andrew Xia
 url: https://andrewxia.ca
 title: Andrew Xia
 description: Andrew Xia's Personal Portfolio
-baseurl: /
 
 sass:
   sass_dir: _sass
