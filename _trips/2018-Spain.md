@@ -13,6 +13,8 @@ We used John Brierly's [*A Pilgrim's Guide to the Camino de Santiago: St. Jean -
 
 While on the *Camino*, I kept journals of the trip which have been uploaded online here, with some minor grammatical changes (to be fair, I was typing everything out on my old iPhone 6 at the time) and some *Editor's Notes* that I've added post-trip. I've also included some photos, but I also didn't have a very good camera at the time (either the Xiaomi Mi 6 phone or my iPhone 6).
 
+As you read this series of posts, keep in mind that I am neither a captivating storyteller nor a very good photographer.
+
 <ul>
     {% for post in site.posts reversed %}
         {% if post.trip == 'camino2018' %}
