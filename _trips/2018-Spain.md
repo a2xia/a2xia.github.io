@@ -1,6 +1,6 @@
 ---
 trip: camino2018
-name: Camino de Santiago, Spain 2018
+name: 2018 08-10 Spain, Camino de Santiago
 ---
 
 # On the Camino de Santiago de Compostela

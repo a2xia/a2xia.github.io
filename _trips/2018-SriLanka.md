@@ -1,6 +1,6 @@
 ---
 trip: srilanka2018
-name: Sri Lanka, 2018
+name: 2018 11-12 Sri Lanka
 ---
 
 # Journey to Sri Lanka
