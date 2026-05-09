@@ -1,0 +1,354 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="Content-Language" content="en-us">
+<title>Australia 2027</title>
+<style>
+body         { font-family: Tohoma, Verdana, Arial, Helvetica, sans-serif; 
+	       font-size: 70%;
+	       padding-left: 26px; 
+               padding-right: 0px; padding-top: 0px; padding-bottom: 20px; 
+               background-position: 0% }
+
+h1   { color: #663300; font-size: 140% }
+h2   { color: #663300; font-size: 120% }
+h3   { color: #663300; font-size: 100% }
+
+table   {  }
+th      { font-size: 70%; background-color: #C0C0C0}
+td      { font-size: 70%; padding-left: 6px; padding right: 1px }
+a:link       { color: black; }
+a:visited    { color: #996600; }
+a:hover      { color: #CC9900; text-decoration: underline }
+.note
+	{
+	margin-left: 14pt;
+	margin-right: 12pt;
+	}
+
+
+</style>
+
+<script>
+window.onload = function () {
+    var toc = "";
+    var level = 0;
+	var dayN = 0;
+    var input = document.getElementById('start').innerText;
+    var currentDay = new Date(input);
+
+    document.getElementById("contents").innerHTML =
+    	document.getElementById("contents").innerHTML.replace(
+    		/<h([\d])>([^<]+)<\/h([\d])>/gi,
+    		function (str, openLevel, titleText, closeLevel) {
+    			if (openLevel != closeLevel) {
+    				return str;
+    			}
+
+    			if (openLevel > level) {
+  				toc += (new Array(openLevel - level + 1)).join("<ul>");
+    			} else if (openLevel < level) {
+    				toc += (new Array(level - openLevel + 1)).join("</ul>");
+    			}
+
+    			level = parseInt(openLevel);
+
+    			var anchor = titleText.replace(/ /g, "_");
+                
+                var currentDayValue = currentDay.toDateString();
+
+                toc += "<li><a href=\"#" + anchor + "\">" + "D" + dayN + " " + currentDayValue + " " + titleText
+    				+ "</a></li>";
+				sectionheader =  "<h" + openLevel + "><a name=\"" + anchor + "\">"
+    				+ "D" + dayN + " " + currentDayValue + ": " + titleText + "</a></h" + closeLevel + ">";
+				dayN += 1;
+                var dateValue = currentDay.getDate() + 1;
+                currentDay.setDate(dateValue);
+
+    			return sectionheader;
+    		}
+    	);
+
+    if (level) {
+    	toc += (new Array(level + 1)).join("</ul>");
+    }
+
+    document.getElementById("toc").innerHTML += toc;
+};
+</script>
+</head>
+<div hidden id="start">2027-03-13</div>
+
+<body>
+
+<h1>Australia 2027</h1>
+
+<div id="toc">
+</div>
+
+<h2>Planning Notes</h2>
+<b>Train Dates</b>
+<ul>
+    <li>Note that Australian daylight savings time begins Monday 5 April, 2027</li>
+    <li>Indian Pacific (Sydney to Perth): Departs Sydney every Wednesday 14:10, arrives Perth every Saturday 14:45</li>
+    <li>Indian Pacific (Perth to Sydney): Departs Perth every Saturday 17:55, arrives Sydney every Wednesday 12:30
+        <ul>
+            <li>Perth to Adelaide (3 days 2 night) Nullarbor Crossing is the target trip: Sa-M, pricing as of 9 May 2026: 
+                <ul>
+                    <li>20-22 Mar: AUD $3,190</li>
+                    <li>27-29 Mar: AUD $3,790</li>
+                    <li>3-5 Apr, 10-12 Apr, 17-19 Apr, 24-26 Apr: AUD $2,690</li>
+                    <li>3-5 Apr, 10-12 Apr, 17-19 Apr, 24-26 Apr</li>
+                </ul>
+            </li>
+            <li>Adelaide to Perth (3 days 2 nights) Under the Milky Way: Th-Sa, pricing as of 9 May 2026:
+                <ul>
+                    <li>11-13 Mar: AUD $3,890</li>
+                    <li>18-20 Mar: AUD $3,390</li>
+                    <li>25-27 Mar: AUD $3,390</li>
+                    <li>1-3 Apr, 8-10 Apr, 15-17 Apr, 22-24 Apr: AUD $2,890</li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+    <li>The Overland (Adelaide to Melbourne): Full-day, operates Sundays and Thursdays. (Melbourne to Adelaide): Full-day, operates Mondays and Fridays.</li>
+</ul>
+
+
+<div id="contents">
+
+<h2>Flight to Australia</h2>
+<p>Qatar/Virgin Australia flies between Toronto, Doha, and Perth. Target dates: Feb 12 - 28. Keeping in mind: Chinese New Year on Feb 6; Family Day on Feb 15. Good Friday on Mar 26, Easter Monday on Mar 29.</p>
+<p>Due to date restrictions on the Indian Pacific Train, might make sense to fly round-trip to Sydney or Brisbane, spend a few days in Sydney, then make way over to Perth.</p>
+
+<h2>Flight to Australia</h2>
+<p>Most journeys require 22+ hours between Toronto and Australia. Most flights travelling westbound depart in the evening on the West Coast of US/Canada and arrive in the morning, 2 days later.</p>
+
+<h2>Sydney</h2>
+
+<b>Circular Quay & The Rocks</b>
+<p>Bookended by the two architectural icons of the city - the Opera House and Harbour Bridge - Circular Quay is a logical starting point for Sydney explorations.</p>
+<ul>
+    <li>Sydney Opera House: One of the most recognisable buildings in the world, Sydney Opera House adds extra sparkle to an already dazzling harbour. Guided tours are offered, the most comprehensive being the two-hour Backstage Tour at 7am on Fr, Sa, Su (bookings essential, AU$190).</li>
+    <li>Royal Botanical Garden: Sprawls along Farm Cove, the next bay over from the Opera House. It was here, in 1788, that the earliest colonists attempted to plant Australia's first European-style vegetable patch; it was a dismal failure.</li>
+</ul>
+
+<b>City Centre</b>
+<p>The cavernous streets of Sydney's CBD aren't just the preserve of besuited office workers. Even with stiff competition from suburban malls, the city centre remains Sydney's premier retail hub, and there are plenty of excellent restaurants and bars tucked away among the skyscrapers as well. The main artery is George St, which ditched cars in favour of light rail in 2019. Running parallel to it, Pitt St is a prime shopping strip. Further east again is Macquarie St, where a row of gracious sandstone buildings harkens back to the early days of the colony.</p>
+<ul>
+    <li>Art Gallery of NSW: Nearly doubling in size in 2022 with the opening of a vast new $344 million building, the setting is lovely, tucked away on the edge of the grassy expanse of The Domain.</li>
+    <li>Hyde Park Barracks: Between 1819 and 1848, around 50,000 convicts passed through Hyde Park Barracks, which despite its refined appearance was then a miserable, overcrowded and rat-infested place. A visit to this UNESCO World Heritage Site, designed by convict architect Francis Greenway, provides a poignant insight into what life was like in the penal colony.</li>
+    <li>Hyde Park: With a broad tree-formed path running along its centre, formal Hyde Park provides a dramatic approach to the city, with fairy lights among the branches making it magical at night. Capping off the curved northern end is the over-the-top Archibald Memorial Fountain. At the southern end is the exquisite art deco ANZAC Memorial.</li>
+    <li>Sydney Tower: Despite the proliferation of skyscrapers in the inner city, this 309m-tall tower completed in 1981 is still Sydney's highest structure. Naturally, it's the 360-degree vista from the 250m-high observation level (branded as Sydney Tower Eye) that is the main drawcard. Adrenaline chasers can opt to tackle the Skywalk. Despite the Westfield signage, Sydney Tower Eye is now operated by the same company that runs Sea Life, Wild Life, and Madame Tussauds in Darling Harbour, meaning that there is a baffling array of combo tickets on offer.</li>
+</ul>
+
+<b>Darling Harbour & Haymarket</b>
+<p>The historic docklands to the west of the city centre have been completely transformed into a dedicated entertainment precinct, with big-name tourist attractions, flashy hotels and two gargantuan casino complexes.</p>
+<ul>
+    <li>Sea Life (formerly Sydney Aquarium): You can walk through perspex tunnels under the capacious tanks while immense rays and sharks glide overhead. Next door is Wild Life, where you can meet the stars of Australia fauna that prefer dry land.</li>
+    <li>Australian National Maritime Museum (Mu-sea-um): Many of the displays are docked outside in the form of tall ships, three naval vessels and other classic craft. Exhibitions range from Indigenous seafaring to surf culture, and from immigration to ocean science. You can also book a cruise on one of the Syndey Heritage Fleet, the most romantic craft being the <em>James Craig</em>, a three-masted iron barque built in England in 1874.</li>
+    <li>Chinatown: The whole of Haymarket is now a Pan-Asian dining destination, with Chinatown morphing into a tiny Koreatown (around Goulburn and George Sts) and larger Thaitown (Pitt and Campbell Sts). The gorgeous Chinese Garden of Friendship, just down the hill, was designed by architects from Sydney's sister city of Guangzhou for Australia's bicentenary in 1988.</li>
+</ul>
+
+<ul><b>Eat, Drink Sleep</b>
+    <li>STAY: Sydney Harbour YHA: Any qualms about the un-hostel-like prices will be shelved the moment you check out the rooftop of this sprawling, modern hostel.</li>
+</ul>
+
+<h2>Sydney</h2>
+
+<b>Blue Mountains</b>
+<p>On the edge of Western Sydney, the Blue Mountains is Sydney's favourite cool-climate escape, popular for weekenders and midwinter Christmas escapes (with a chance of snow in July and August). The foothills start 65km inland from the city centre and rise to a 1100m-high sandstone plateau. The views over the valleys from the edge of the escarpments are unforgettable. A series of small towns are spread out along the main highways. Leura is the prettiest, its genteel streets lined with trees, cottages, and well-tended gardens. Katoomba is the main hub, with the most dining, drinking and shopping options. Other appealling contenders include Wentworth Falls, Blackheath and Mt Victoria.</p>
+
+<p>It's possible to travel between main towns by public bus or train. Another option is the Blue Mountains Explorer Bus, which offers a hop-on, hop-off service on a Katoomba-Leura loop. A car is the best option for getting to remote trailheads and viewpoints.</p>
+
+<ul>
+    <li>The essential Blue Mountains experience is to stand at one of the many clifftop viewpoints. One of the most memorable places for doing this is Echo Pointi n Katoomba, which offers the added thrill of views over the magical trio known as the Three Sisters. Arrive early or late if you'd prefer more serenity.</li>
+    <li>Sublime Point (sponsored by Sublime Text) is much less frequented near Leura. This sharp, triangular outcrop narrows to a dramatic lookout with sheer cliffs on each side. You can still spot the Three Sisters from here, although they're further away.</li>
+    <li>Around Blackheath there are several spots: notably Evans Lookout and Govettes Leap Lookout</li>
+    <li>Scenic World offers extra frisson if the views alone aren't cutting it: two of its attractions are billed as the steepest of their kind in the world, which helps justify the correspondingly steep prices.
+        <ul>
+            <li>Scenic Railway: Descending a hair-raising 52-degree gradient to the Jamison Valley floor, where a herd of lifelike animatronic dinosaurs have been let loose in the ancient rainforest. After completing the forest boardwalks you can then catch the 510m Scenic Cableway back to the top.</li>
+            <li>Scenic Skyway: A glass-floored gondola strung across the valley for a length of 384m. You can also ride on the roof of the gondola for the Beyond Skyway experience.</li>
+        </ul>
+    </li>
+</ul>
+
+<h2>Sydney</h2>
+
+<h2>Sydney</h2>
+
+<h2>Perth</h2>
+<p>Geographically, Perth may be one of the most isolated cities in the world, but don't expect some sleepy backwater. It's laid-back, yes, but within the relaxed setting is a thriving cosmopolitan city that's riding the wave of the latest mining boom, where new centrepiece developments are popping up like it's the 1890s gold rush again.</p>
+
+<ul>
+    <li>Western Australia Museum Boola Bardip: The showpiece of Perce Cultural Centre opened its doors in late 2020 to live up to the hype as one of Australia's best. Translating as 'many stories' in the Whadjuk Noongar language, Boola Bardip is a deep dive into WA's rich diversity of voices. Set over eight sprawling permanent galleries, it's a massive sight, so aim for its twice daily highlights tours.</li>
+    <li>Art Gallery of Western Australia: Reopened in 2021 after a mulitmillion-dollar makeover, it's set over four floors within an award-winning brutalist-style building that dates to 1979. Entry here is free and it features a superb range of works by prominent Australian artists across its permanent collection and temporary galleries.</li>
+    <li>Perth Institute of Contemporary Arts: The city's best gallery for 21st-century art. Exhibitions change every few months and entry is free.</li>
+    <li>Elizabeth Quay: Perth's bold, multibillion-dollar plan to revitalise its city centre is this shiny waterfront showpiece was officially unveiled in 2016. This tourist precinct attracts folks for dining, and is a departure point for Rottnest Island and boat tours on Swan River.</li>
+</ul>
+
+<h2>Perth</h2>
+
+<h2>Indian Pacific Train Day 1 (must be on a Saturday)</h2>
+<p>Journeys Beyond Rail Australia offers the Indian Pacific service from Perth to either Adelaide or Sydney (and in reverse). Plan is to take the Indian Pacific to Adelaide, then the Overland to Melbourne.</p>
+
+<ul>
+    <li>The Indian Pacific departs Perth at 5:55 PM (arrives in Adelaide at 5:25 PM) on the following dates: Feb 6-Feb 8; Feb 13-15; Feb 20-22; Feb 27-Mar 1</li>
+    <ul>
+        <li>As of Apr 2026, the cheapest single room for this journey is $2,490, except the Feb 13-15 trip which starts at $3,190 (prices in Australian dollars)</li>
+    </ul>
+    <li>In the reverse direction, departing Adelaide at 10:00 PM (arrives in Perth at 2:45 PM) on the following dates: Feb 4-6; Feb 11-13; Feb 18-20; Feb 25-27</li>
+</ul>
+
+<h2>Indian Pacific Train Day 2 (must be on a Sunday)</h2>
+<ul>
+    <li>6:30am Broken Hill Morning Experience</li>
+    <li>4:05pm Arrive Adelaide/Afternoon Experience</li>
+    <li>10:10pm Depart Adelaide</li>
+</ul>
+
+<h2>Indian Pacific Train Day 3 (must be on a Monday)</h2>
+<ul>
+    <li>3:40pm Cook/Afternoon Experience</li>
+    <li>5:55pm Rawlinna/Evening Experience</li>
+    <li>5:25pm Arrive Adelaide</li>
+</ul>
+
+<h2>Adelaide</h2>
+<p>While Australia's eastern states compare the size and scale of their capital cities, Adelaide quitely maintains its rhythm without fuss or fanfare. Lonely Planet recommends the Adelaide Central Market, the neighbouring Adelaide Hills for a winery tour, and the Cleland Wildlife Park.</p>
+
+<ul>
+    <li>Adelaide Zoo: Home to over 250 animals, thriving within eight hectares of Australia's second-oldest zoo. Don't miss behind-the-scenes experiences on Wednesdays and weekends from 8:30am.</li>
+    <li>Adelaide Oval: Lauded as the world's prettiest cricket ground, the Adelaide Oval hosts events and cricket and AFL matches year-round. Discover the Bradman Collection and heritage-listed treasures on a 90-minute guided tour through the stadium. For a unique experience, ascend 50m above the hallowed turf with RoofClimb Adelaide Oval, catching 360-degree views from the stadium's colossal roof scallops.</li>
+    <li>Adelaide Central Market: In the heart of the CBD, this is the city's culinary pulse, striped with 70 stalls and dining gems that promise a sensory feast. Open Tuesday through Saturday, it's a lively blend of tradition and evolution, showcasing local artisans, seasonal produce, locally caught seafood, sweets and ready-to-eat treats. Next door, Chinatown adds to the allure with its vibrant mix of Asian eateries along Gouger St.</li>
+    <li>TreeClimb Adelaide: Within the leafy embrace of the southern Adelaide Park Lands, weave through an enthralling web of elevated log-walks, rope ladders and zip lines among the city's lofty treescapes.</li>
+    <li>State Library of South Australia: If politics and sociology are your deal, the State Library hosts the Centre of Democracy inside the Italiante-style Institute Building. Open daily, the compact yet detailed free exhibition explores women's suffrage, voting for equality, land rights, and the controversies and challenges that have shaped Australian democracy.</li>
+    <li>South Australian Museum: This free museum has five evolutionary-rich floors that cover megafauna, prehistoric fossils and intrepid Antarctic journeys. The museum's centrepiece is the two-storey Australian Aboritional Cultures Gallery, showcasing over 3000 priceless cultural items from the world's largest collection of Aboriginal artefacts. The museum collaborates closely with communities to ensure respectful and appropriate use.</li>
+    <li>Art Gallery of South Australia: Established in 1881, the gallery is home to one of the country's largest and most accessible art collections. Today, the space blends traditional and contemporary First Nations art along with 47,000 permanent works.</li>
+    <li>Australian Space Discovery Centre: Leave a flexible hour to orbit this small but mighty space-age command.</li>
+    <li>Adelaide Botanic Gardens: Venture into the Victorian-era palm house, admire the gigantic <em>Victoria amazonica</em> in the water-lily pavilion or stroll above the tropical lowland rainforest in the Bicentennial Conservatory.</li>
+    <li>National Wine Centre of Australia: Delivers an interpretive and educational trip through 55 of the country's wine regions. Pre-booked tours, tastings, and masterclasses explore rare and innovative releases in Australia's largest wine cellar.</li>
+    <li>South Australian Maritime Museum: Delves into the port's seafaring past, housing Australia's oldest nautical collection dating back to 1872.</li>
+    <li>National Railway Museum: Stroll through steam engine cabs and lavish carriages, while education yourself with interactive displays. The museum hosts 30-minute rides on the Semaphore to Fort Glanville Railway, rumbling along the coast on Sundays and public holidays from October to April. One does not need to be autistic to visit, but I doubt that comes up a lot.</li>
+    <li>South Australian Aviation Museum: Preserves a collection of antique aircraft and aviation memorabilia.</li>
+    <li>Adelaide Dolphin Sanctuary: A haven for about 40 bottlenosed residents, featuring 10,000-year-old mangrove forests, seagrass meadows, birdwatching and a haunting ship graveyard.
+        <ul>
+            <li>Adventure Kayaking SA runs daily guided paddling tours from the Garden Island Boat Ramp. All kayakers must follow strict rules around marine mammals.</li>
+            <li>Port River Cruises offer 90 minute tours departing from McLaren Wharf</li>
+        </ul>
+    </li>
+</ul>
+
+<ul>
+    <b>Eat, Drink, Sleep</b>
+    <li>EAT: Herringbone: Refined but relaxed eatery delivering seasonal farm-to-fork menus.</li>
+    <li>EAT: Osteria Oggi: Modern Italian preparing fresh pasta and sweets.</li>
+    <li>EAT: AURORA: Seasonal share plates and curated tasting experiences, with profits supporting local artists.</li>
+    <li>EAT: Bakery on O'Connell: One of the rare bakehouses upholding SA's proud pie floater tradition.</li>
+</ul>
+
+<h2>Adelaide</h2>
+
+<ul><b>Around Adelaide</b>
+    <li>Adelaide Hills: A patchwork of conservation and national parks, sprawling gardens and foresty reserves, all within an hour of Adelaide's CBD.
+        <ul>
+            <li>Mt Lofty Summit Visitor Information Centre has info on local tracks and attractions. Nearby: three-hour 8km return Waterfall Gully Track, two-hour 7km Mt Lofty Botanic Garden Loop</li>
+            <li>Morialta Conservation Park and Cleland National Park hold an array of intertwined walks and is a must for wildlife lovers.</li>
+            <li>Hahndorf: Australia's oldest surviving German settlement.</li>
+            <li>Tours in the Adelaide Hills: Trailhopper hop-on/hop-off winery tour bus with pick-up and drop-off in central Adelaide. Bike About: e-Bike tours. Escapegoat: beginner-friendly MTB tours zipping downhill from Mt Lofty through native bushland via Cleland Wildlife Park</li>
+        </ul>
+    </li>
+</ul>
+
+<h2>Overland Train (must be on a Thursday)</h2>
+<p>Between Adelaide and Melbourne, the "Overland" train service runs every Sunday and Thursday in 2027. On Thursdays, this train departs Adelaide at 6:55 AM and arrives in Melbourne at 6:50 PM.</p>
+
+<h2>Melbourne</h2>
+<b>City Centre</b>
+<p>The city centre is the hub of Melbourne's public transport system.</p>
+<ul>
+    <li>Federation Square: Named in honour of the centenary of Australia's Federation in 2001, Federation Square is a series of buildings arranged around a large sloping amphitheatre. Two major cultural institutions are located here:
+        <ul>
+            <li>National Gallery of Victoria's Ian Potter Centre: NVG Australia: A visit is highly recommended as its collection exclusively focuses on Australian art.</li>
+            <li>Australia Centre for the Moving Image</li>
+        </ul>
+    </li>
+    <li>Chinatown: Chinese immigrants arrived in great numbers during the 1850s, hoping to make a fortune they described as 'New Gold Mountain'. Several grand buildings from this period still exist. The most impressive is the wedding cake-like former Sun Kum Lee Trading Company. To learn more about the history of the Chinese in Victoria, visit the Chinese Museum in Cohen Pl off Little Bourke St.</li>
+    <li>State Library of Victoria: Volunteer-run 45-minute tours visit the main historical spaces and depart most days at 10:45a and 1:45p. Bookings are essential.</li>
+</ul>
+
+<ul>
+    <li>Yarra Valley hot-air ballooning: companies include Global Ballooning, Gold Wild Ballooning, and Picture This send their clients up in the air to enjoy bird's-eye views over the farms, vineyards and rolling hills of this particularly scenic area, with Melbourne's city skyline and the Dandenong and Yarra Ranges providing dramatic backdrops. Most packages include a champagne breakfast, and some include transfers from Melbourne's CBD.</li>
+</ul>
+
+<h2>Greater Victoria</h2>
+<b>Great Ocean Road</b>
+<p>The Great Ocean Road is one of Australia's most famous touring routes. It rolls past world-class surfing breaks, through pockets of rainforest and calm seaside towns, and under koala-filled tree canopies. One of the most iconic sights is the Twelve Apostles, a group of limestone stacks jutting 45m out of the sea. Most people drive along the Great Ocean Road or join an organised tour from Melbourne. Trains from Melbourne go to Geelong, Warrnambool and Portland, and coaches connect to Lorne and Apollo Bay.</p>
+
+<ul>
+    <li>Twelve Apostles: Port Campbell National Park is best known for the limestone stacks that jut out of the wild ocean. They change over the years, shaped by weathering and erosion, and some disappear completely. Visit at sunrise or sunset to double that feeling of awe.</li>
+    <ul>
+        <li>Despite the name, the Twelve Apostles are not 12 in number, and from all records, never have been. From the viewing platform, you can count seven, but some may obscure the others.</li>
+        <li>Once you've stopped at the visitors centre, and under the Great Ocean Road itself to see the view of the Twelve Apostles, walk to the Gibson Steps (2.2km return). These 86 steps, hacked by hand into the cliffs by 19th-century landowner Hugh Gibson (and now replaced by concrete ones), lead down to wild Gibson Beach. You can walk along the beach, but be careful not to get stranded by high tights.</li>
+        <li>Stay at the Twelve Apostles or London Bridge after sunset and bring binoculars to watch the parade of penguins on the sand below. Little penguins generally appear about 15 minutes after the sun goes down, moving across the sand to their burrows. About 800 penguins live at the Twelve Apostles. Fewer are at London Bridge, but here you're closer to them.</li>
+    </ul>
+</ul>
+
+<h2>Greater Victoria</h2>
+
+<h2>Canberra</h2>
+<p>Flights between Melbourne and Canberra take approx. 1h50m for $150 one-way. There is no direct train connection, it would involve stopping in Sydney or taking a bus.</p>
+
+<p>Canberra has come a long way since it was derided by city folk as nothing more than a sheep paddock when it was named. This purposefully designed city in the Australian Capital Territory (ACT) now leads the way when it comes to food, culture, accessibility and inclusivity. The capital has many world-class museums and galleries, so it's not somewhere you can visit in a hurry. If you linger longer, you may even get used to its 800-plus roundabouts.</p>
+
+<ul>
+    <li>National Gallery of Australia: Spread over two floors with soaring ceilings. It houses sculptures, installations, paintings and photography by Australian and international artists. Allow a couple of hours inside and then head out to the sculpture garden.</li>
+    <li>National Portrait Gallery: Home to 100-plus striking portraits of famous Australians and international celebrities.</li>
+    <li>National Library of Australia: Has a copy of every book published in the country. Join a free 30-minute guided tour into this treasure trove of rare books to see priceless works, such as Captain Cook's <em>Endeavour</em> journal.</li>
+    <li>Questacon: This spiralling science centre keeps kids of all ages entertained for hours.</li>
+    <li>National Capital Exhibition: This interactive space tells the story of how and why a sheep paddock was turned into the nation's capital.</li>
+    <li>National Museum of Australia: Occupies a prime position on a promontory on the lake's northwestern edge and showcases First Nations history, natural habitats, social history, whaling and the Great Barrier Reef. Tickets can be booked in 75-minute time slots daily, and it's best to reserve online in advance.</li>
+    <li>Australian War Memorial: The wheelchair-accessible site houses a collection of war memorabilia from WWI and WWII, as well as a Hall of Valour to honour the most decorated war heroes. If you visit in the afternoon, stick around to witness the Last Post ceremony at 4:45pm each ady. Tickets are free, but you need to book a time slot online.</li>
+    <li>Parliament House: One of the most accessible in the world, a conscious decision by architect Romaldo Giurgola. Free, short guided tours are offered six times a day, or you can join one of the more in-depth tours for a fee.</li>
+    <li>Museum of Australian Democracy: The Old Parliament House before it moved in 1988, and was the seat of the nation for 61 years. The old chambers have been turned into interactive exhibits about media, democracy, referendums and changemakers.</li>
+</ul>
+
+<h2>Canberra</h2>
+<p>Flights between Canberra and Brisbane take approx. 1h40m. To Sydney is approx. 1h.</p>
+
+<h2>Brisbane</h2>
+<p>The charms of Queensland's capital are undeniable: the weather, the arts, the cafes, the bars, the beautiful old Queenslander houses, the relaxed, big-country-town feel. With a fresh energy about Brisbane, as it prepares the host the 2032 Summer Olympics, it's a golden opportunity to get a taste of the city as ribbons are cut on new developments and Brisbane gets set to glow on the world stage.</p>
+
+<p>Roma St is the nerve centre of Brisbane's transport network: all city trainlines stop here, and long-distance trains leave from here. E-bikes and e-scooters are available to rent through Beam and Neuron; CityHopper ferries are free.</p>
+
+<ul>
+    <li>City Hall: Australia's largest, built betwen 1920 and 1930. Although free, fascinating heritage tours of the sandstone behemoth should be booked in advance.</li>
+    <li>Museum of Brisbane: On the third floor of City Hall, which explores historic and modern aspects of Brisbane through changing exhibitions offering progressive insights into Queensland's capital.</li>
+    <li>Old Government House: Queensland's most important heritage building, this 1862 showpiece was designed by estimable government architect Charles Tiffin as a residence for Sir George Bowen, Queensland's first governor.</li>
+    <li>City Botanical Gardens: Originally a collection of food crops planted by convicts in 1825, it's now Brisbane's favourite green space.</li>
+    <li>Commissariat Store Museum: Built in 1829, a former government storehouse is the city's oldest occupied building. Inside is a somewhat tired yet interesting little museum with a focus on the region's convict and colonial history.</li>
+    <li>Queen's Wharf Brisbane: Rising up from the edge of the CBD, this multi-billion-dollar lifestyle and entertainment precinct is huge - in every sense. This bold new addition to the city's skyline is anchored by The Star Brisbane casino complex and houses a slew of dining and entertinment options, a sky deck, several hotels, and green spaces and trails.</li>
+    <li>Queensland Cultulra Centre: on South Bank, just across the river from the CBD, its collection of arts institutions includes the Queensland Peforming Arts Centre, the Queensland Museum & Sciencentre, the State Library of Queensland, and the Queensland Art Gallery and Gallery of Modern Art.</li>
+</ul>
+
+<ul>Eat, Drink, Sleep
+    <li>EAT: Lune: Yes, it's worth forking out at least $7 for a speciality croissant. (In Toronto terms, that's cheap!)</li>
+    <li>EAT: Alba Bar & Delicatessen: Tipples are designed to be enjoyed with Basque-inspired share plates</li>
+    <li>EAT: New Shanghai: The xiao long bao make a great budget lunch in this buzzing food court</li>
+    <li>EAT: Exhibition: Special Occasion? Be wowed by peak-season produce reimagined in a 6-course degustation</li>
+    <li>COFFEE: Coffee Iconic: Tucked down an alley, this longstanding garden cafe is a caffein-fueled oasis</li>
+    <li>DRINK: Dr Gimlette: Named for the surgeon who inspired the famed gin elixir, this vintage-style bar takes cocktails seriously</li>
+    <li>DRINK: Antico: This newish split-level spot provdes there can never be too many old-world cocktail bars in Burnett Ln</li>
+    <li>DRINK: Gresham Bar: When you just want a casual drink with a bit of atmosphere, this bar in an 1885 former bank hits the spot</li>
+</ul>
+
+<h2>Brisbane, Sunshine Coast, and Gold Coast</h2>
+
+<h2>Brisbane, Sunshine Coast, and Gold Coast</h2>
+
+<h2>Flight back to Toronto via Vancouver</h2>
+<p>Return flights also take 22+ hours, but due to the International Date Line, both the departure and arrival can fall on the same calendar day, respective to local time zones.</p>
+
+</div>
+</body>
+</head>
